@@ -24,5 +24,5 @@ Deployment (app):
 - ```kubectl apply -f manifests/sample-app.yml```
 
 Destroy:
-- kubectl delete -f manifests/sample-app.yml
-- terraform destroy
+- ```kubectl delete -f manifests/sample-app.yml```
+- ```terraform destroy```
