@@ -13,7 +13,7 @@ Deployment (infra):
 - Create DNS Record pointing to Load balancer
 
 
-Deployment (infra):
+Deployment (app):
 - ```cd app```
 - ```docker build -t <registry_name/image_name> .```
 - ```docker push <registry_name/image_name>```
