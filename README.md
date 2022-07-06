@@ -8,6 +8,7 @@ Requirements:
 
 Deployment (infra):
 - ```terraform plan```
+- ```terraform apply```
 - ```aws eks update-kubeconfig --kubeconfig ~/.kube/config --region us-west-2 --name eks-example``` (for console access)
 (https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
 - Create DNS Record pointing to Load balancer
