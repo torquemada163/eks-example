@@ -54,5 +54,5 @@ resource "helm_release" "ingress_controller" {
     }
   )]
 
-  depends_on = [module.vpc ,module.eks, module.eks_managed_node_group, kubernetes_service_account.aws_lb_controller, helm_release.cert_manager, helm_release.aws_lb_controller]
+  depends_on = [module.vpc ,module.eks, module.eks_managed_node_group, kubernetes_service_account.aws_lb_controller, helm_release.cert_manager, helm_release.aws_lb_controller, aws_security_group_rule.ingress_access]
 }
